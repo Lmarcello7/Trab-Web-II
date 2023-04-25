@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Tarefas</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-7NJS/btWsS2Q0fhf+ZP0JiPJcZZ4cn4gBKfX9yH/HG8tnhWw+Gpx6d5Ua32iY8Z0WxG0rr6bXO6O2U6y3qLy0w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<!--FONTES-->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		.nav-item:hover{
+			text-decoration: underline;
+		}
+
+		.boas-vindas{
+			font-family: 'Noto Sans Korean', sans-serif;
+			font-weight: 200;
+		}
+
+		.icon{
+			font-size: 25px;
+		}
+
+		.yt:hover{
+			background-color: #FF0000;
+			transform: scale(1.11); 
+    		transition: .4s;
+		}
+	</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			<a class="navbar-brand" href="#">Lista de Tarefas</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" aria-current="page" href="#">Suporte</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Como fuciona?</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<main>
+		<div class="container">
+			<section class="boas-vindas mt-5 text-center"> <!--SECTION MENSAGEM DE BOAS VINDAS-->
+				<h1>Olá, bem vindo!</h1>
+				<p>Você pode escolher abaixo o quer fazer, caso tenha duvida, pode nos chamar no <span>suporte!</span></p>
+			</section>
+			<section class="tarefas mt-5"><!--SECTION AÇÕES-->
+				<div class="d-flex justify-content-evenly">
+					<div class="card mb-3" style="max-width: 18rem;">
+						<div class="card-body">
+						  <h5 class="card-title"><i class="fa fa-tasks text-secondary" aria-hidden="true"></i>	Criar Tarefa Nova</h5>
+						  <hr>
+						  <p class="card-text"><a href="http://" target="_blank" rel="noopener noreferrer"></a></p>
+						</div>
+					</div>
+					<div class="card mb-3" style="max-width: 18rem;">
+						<div class="card-body">
+						  <h5 class="card-title"><i class="fa fa-hand-o-right text-primary" aria-hidden="true"></i>	Responder Tarefas</h5>
+						  <hr>
+						  <p class="card-text">Clique aqui para responder uma tarefa!</p>
+						</div>
+					</div>
+				</div>
+				<div class="card w-75 m-auto mt-3">
+					<div class="card-header">
+						Visualizar tarefas em andamento
+					</div>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item text-center">Nenhuma tarefa em andamento</li>
+					</ul> 
+				</div>
+			</section>
+			<hr class="mt-4">
+			<footer class="mt-5">
+				<div class="d-flex justify-content-evenly align-items-center">
+					<div>
+						<h6>Todos os direitos reservados</h6>
+					</div>
+					<div>
+						<span class="bg-light ms-3 px-1 rounded icon yt">
+							<i class="text-center fa fa-youtube-play" aria-hidden="true"></i>
+						</span>
+						<span class="bg-light ms-3 px-1 rounded icon twitter">
+							<i class="text-center fa fa-twitter" aria-hidden="true"></i>
+						</span>
+						<span class="bg-light ms-3 px-1 rounded icon inst">
+							<i class="text-center fa fa-instagram" aria-hidden="true"></i>
+						</span>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</main>
+</body>
+</html>
